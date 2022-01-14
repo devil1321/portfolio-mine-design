@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../src/scss/theme/pages/home.scss",
+        "../../src/scss/_fonts.scss",
+        "../../src/scss/_variables.scss",
+        "../../src/scss/_global.scss",
+        "../../src/scss/_mixins.scss"
+    ],
+    "names": [],
+    "file": "home.css"
+}
