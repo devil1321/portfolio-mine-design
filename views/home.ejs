@@ -16,7 +16,93 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        portfolio
-        <script src="" async defer></script>
+        <div class="container">
+            <div class="home">
+                <div class="home__hero-wrapper">
+                    <div class="home__navbar">
+                        <div class="home__navbar-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="home__navbar-menu">
+                            <a href="" class="home__nav-link active">Portfolio</a>
+                            <a href="" class="home__nav-link">Service</a>
+                            <a href="" class="home__nav-link">Awards</a>
+                            <a href="" class="home__nav-link">Technology</a>
+                            <a href="" class="home__nav-link">Contact</a>
+                        </div>
+                    </div>
+                    <div class="home__hero">
+                        <div class="home__hero-text">
+                            <h1>Web Dev</h1>
+                            <p>Everything For Web Design</p>
+                        </div>
+                        <img src="/public/assets/hero.png" alt="hero-img">
+                    </div>
+                </div>
+                <div class="home__service">
+                    <h2>Make Your Ideas Envolve</h2>
+                    <div class="home__service-content">
+                        <img src="/public/assets/intro-image.png" alt="service">
+                        <p>My idealogy is ti <span class="violet-bold">engage</span> my best <span class="violet-bold">skills</span> and technology in the process of <span class="violet-bold">design</span></p>
+                    </div>
+                    <h2>Everything Under Control</h2>
+                    <div class="home__cards">
+                        <%- include('components/card',{
+                            icon:'/public/assets/ux-ui-icon.png',
+                            title:'UX/UI',
+                            text:'Through research to prepare the best solutions',
+                        })%>
+                        <%- include('components/card',{
+                            icon:'/public/assets/case-icon.png',
+                            title:'Individual Aproach',
+                            text:'Idinvidualy planned solutions to provide best answers to your problems and needs'
+                        })%>
+                        <%- include('components/card',{
+                            icon:'/public/assets/hands-icon.png',
+                            title:'E-commerce',
+                            text:'Best UX/UI design for your E-commerce. Proffessional experience'
+                        })%>
+                    </div>
+                </div>
+                <div class="home__technology">
+                    <h2>Technology by all means</h2>
+                    <div>
+                        <p>I have essential <span class="violet-bold"></span>experience to use the most <span class="violet-bold">powerfull</span> developers tools on the market. I want to make sure that the <span class="violet-bold">solution</span> I prepare for <span class="violet-bold">client</span> is the one that will make a difference and wil enrich your <span class="violet-bold">facilities</span></p>
+                    </div>
+                    <img src="/public/assets/man-img.png" alt="">
+                </div>
+                <div class="home__purple-bg">
+                    <div class="home__awards">
+                        <h2>Projects</h2>
+                        <img src="/public/assets/easy-bank.png" alt="">
+                        <img src="/public/assets/wheather-app.png" alt="">
+                        <img src="/public/assets/sale-hub.png" alt="">
+                    </div>
+                    <div class="home__contact">
+                        <h2>Contact</h2>
+                        <form class="home__form">
+                            <div class="home__field">
+                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="E-mail">
+                            </div>
+                            <div class="home__field">
+                                <textarea name="" id="" cols="30" rows="1" placeholder="Message"></textarea>
+                            </div>
+                        </form>            
+                    </div>
+                    <div class="home__footer">
+                        <span>Phone:82-112-655-192</span>
+                        <span>Email: test@gmaill.com</span>
+                        <span>Address: Houston Road 36</span>
+                    </div>
+            </div>
+        </div>
+    </div>
+        <script> var exports = {}; </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="/js/app.js" async defer></script>
     </body>
 </html>

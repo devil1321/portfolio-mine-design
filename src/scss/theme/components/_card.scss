@@ -1,0 +1,50 @@
+.card{
+    cursor: pointer;
+    box-sizing: border-box;
+    padding:20px;
+    margin:0px 20px;
+    width: 20%;
+    height:300px;
+    border-radius: 50px;
+    border-radius: 10px;
+    background: white;
+    transition:all 0.3s ease-in-out;
+    @include breakpoint-down(medium){
+        width: 30%;
+    }
+    @include breakpoint-down(small){
+        margin:20px 0px;
+        width: 100%;
+        box-shadow:  5px 5px 7px #a1a1a1,
+                 -5px -5px 7px #ffffff;
+    }
+    &:hover{
+        box-shadow:  5px 5px 7px #a1a1a1,
+                 -5px -5px 7px #ffffff;
+    }
+    @include createFlex(column,center,center,null);
+    img{
+        width: 100px;
+    }
+    
+    h2,p{
+        margin:5px 0px;
+        text-align: center;
+    }
+    h2{
+        margin:10px 0px;
+        @include breakpoint-down(medium){
+            font-size: pxToRem(25);
+            margin:20px 0px;
+        }
+    }
+    &__title{
+        color:purple !important;
+        font-size: pxToRem(30);
+        width: 60%;
+    }
+    p{
+        font-weight: pxToRem(20);
+        font-weight: bold;
+    }
+}

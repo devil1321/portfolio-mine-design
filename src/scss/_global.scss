@@ -1,0 +1,31 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+
+}
+h2{
+    margin:80px 0px;
+    font-size: pxToRem(60);
+    text-align: center;
+    @include breakpoint-down(small){
+        font-size: pxToRem(28);
+    }
+}
+p,span{
+    @include breakpoint-down(small){
+        font-size: pxToRem(16) !important;
+    }
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.container{
+    width: 100vw;
+    overflow-x: hidden;
+}
+.violet-bold{
+    color:purple;
+    font-weight: bold;
+    font-size: pxToRem(30);
+}
